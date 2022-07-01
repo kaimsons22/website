@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 2%, rgba(41,120,160,1) 60%, rgba(175,35,93,1) 100%); 
+    height: 10vh;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.brand img {
+    height: 9vh;
+}
+
+.brand h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #f5f5f5;
+    opacity: 0.9;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.banner p {
+    letter-spacing: .05rem;
+}
+
+.banner img {
+    width: 18rem;
+    padding-top: 2rem;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+  background: -webkit-linear-gradient(rgba(41,120,160,1), rgba(175,35,93,1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: rgba(175,35,93,1);
+}
+
+.servicesSection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px 0 30px 0;
+}
+
+.servicesSection .card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.servicesSection .card img{
+    width: 6.5rem;
+    padding: 20px 0;
+}
+
+.servicesSection h2 {
+    font-weight: 300;
+}
+
+/* button link */
+.btn-link {
+    display: block;
+    width: 125px;
+    background: -webkit-linear-gradient(rgb(163, 0, 95), rgba(175,35,93,1));
+    color: beige;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    transition: transform .3s;
+}
+
+.btn-link:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+	.brand h1 {
+        display: none;
+    }
+}
